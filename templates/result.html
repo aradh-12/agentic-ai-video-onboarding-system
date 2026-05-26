@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        AI Verification Result
+    </title>
+
+    <link rel="stylesheet"
+          href="/static/result.css">
+
+</head>
+
+<body>
+
+<div class="result-container">
+
+    <!-- HEADER -->
+
+    <div class="result-header">
+
+        <h1>
+            AI Verification Report
+        </h1>
+
+        <p>
+            Enterprise AI Onboarding Summary
+        </p>
+
+    </div>
+
+    <!-- STATUS CARD -->
+
+    <div class="status-card">
+
+        <div class="status-top">
+
+            <div
+    class="verified-badge"
+    id="verificationStatus"
+>
+    Loading...
+</div>
+
+            <div class="confidence-score">
+
+                Confidence Score
+
+                <span id="confidenceScore">
+
+                       0%
+
+                   </span>
+
+            </div>
+
+        </div>
+
+        <div class="status-grid">
+
+            <div class="status-box">
+
+                <h3>
+                    Face Verification
+                </h3>
+
+                <div id="faceStatus">
+    Pending
+</div>
+            </div>
+
+            <div class="status-box">
+
+                <h3>
+                    Identity Validation
+                </h3>
+
+                <div id="identityStatus">
+    Pending
+</div>
+
+            </div>
+
+            <div class="status-box">
+
+                <h3>
+                    AI Screening
+                </h3>
+
+                <div id="aiScreeningStatus">
+    Pending
+</div>
+            </div>
+
+            <div class="status-box">
+
+                <h3>
+                    Document Analysis
+                </h3>
+<div id="documentStatus">
+    Pending
+</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- AI SUMMARY -->
+
+    <div class="summary-card">
+
+        <h2>
+            AI Analysis Summary
+        </h2>
+
+        <p id="analysisSummary">
+
+    Waiting for AI verification...
+
+</p>
+
+    </div>
+
+    <!-- TIMELINE -->
+
+    <div class="timeline-card">
+
+        <h2>
+            Verification Timeline
+        </h2>
+
+        <div class="timeline-item">
+            AI Interview Completed
+        </div>
+
+        <div class="timeline-item">
+            Face Verification Completed
+        </div>
+
+        <div class="timeline-item">
+            Document Upload Completed
+        </div>
+
+        <div class="timeline-item">
+            AI Validation Completed
+        </div>
+
+        <div class="timeline-item">
+            Final Approval Generated
+        </div>
+
+    </div>
+
+    <!-- BUTTONS -->
+
+    <div class="button-section">
+
+        <button id="downloadBtn">
+
+            Download Report
+
+        </button>
+
+        <button id="finishBtn">
+
+            Finish Onboarding
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="/static/result.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        AI Verification Dashboard
+    </title>
+
+    <link rel="stylesheet"
+          href="/static/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- HEADER -->
+
+    <div class="dashboard-header">
+
+        <h1>
+            AI Verification Dashboard
+        </h1>
+
+        <p id="roleText">
+
+            Loading role...
+
+        </p>
+
+    </div>
+
+    <!-- DYNAMIC CARDS -->
+
+    <div class="upload-grid"
+         id="uploadGrid">
+
+    </div>
+
+    <!-- AI RESULT -->
+
+    <div class="analysis-section">
+
+        <h2>
+            AI Analysis Result
+        </h2>
+
+        <div id="analysisResult">
+
+            Waiting for document upload...
+
+        </div>
+
+        <button id="viewResultBtn">
+
+            Analyze Documents
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="/static/dashboard.js"></script>
+
+</body>
+</html>

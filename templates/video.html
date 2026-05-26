@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>AI Video Onboarding</title>
+
+  <link rel="stylesheet"
+        href="{{ url_for('static', filename='video.css') }}">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- LEFT SIDE -->
+
+  <div class="video-section">
+
+    <!-- AI VIDEO -->
+
+    <div class="ai-video">
+
+      <div class="ai-label">
+
+        <span class="pulse"></span>
+
+        AI Assistant Speaking...
+
+      </div>
+
+      <div class="ai-content">
+
+        <i class="fa-solid fa-robot robot-icon"></i>
+
+        <h1>AI Assistant</h1>
+
+        <p>
+          Welcome to Smart AI Verification & Onboarding
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- USER CAMERA -->
+
+    <div class="user-video">
+
+      <div class="camera-header">
+
+        <i class="fa-solid fa-camera"></i>
+
+        <span>Your Camera</span>
+       
+         <div id="faceStatus">
+            No Face Detected
+             </div>
+        </div>
+
+      <video
+        id="userVideo"
+        autoplay
+        playsinline
+        muted>
+      </video>
+
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDE -->
+
+  <div class="chat-section">
+
+    <!-- HEADER -->
+
+    <div class="chat-header">
+
+      <i class="fa-solid fa-comments"></i>
+
+      <span>Live Onboarding Chat</span>
+
+    </div>
+
+    <!-- CHAT -->
+
+    <div class="chat-messages">
+
+    </div>
+
+    <!-- INPUT -->
+
+    <div class="chat-input">
+
+      <input
+        type="text"
+        placeholder="Type your message..."
+      >
+
+      <button class="send-btn" id="sendBtn">
+
+        <i class="fa-solid fa-paper-plane"></i>
+
+      </button>
+
+    </div>
+
+    <!-- CONTINUE -->
+
+    <div class="bottom-actions">
+
+      <button
+         id="continueBtn"
+           disabled
+>          Continue Verification →
+
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- CONTROLS -->
+
+<div class="controls">
+
+  <!-- MIC -->
+
+  <button class="control-btn mic">
+
+    <i class="fa-solid fa-microphone"></i>
+
+    <div class="status-line mic-line hidden"></div>
+
+  </button>
+
+  <!-- CAMERA -->
+
+  <button class="control-btn camera">
+
+    <i class="fa-solid fa-video"></i>
+
+    <div class="status-line camera-line hidden"></div>
+
+  </button>
+
+  <!-- END -->
+
+  <button class="control-btn end">
+
+    <i class="fa-solid fa-phone"></i>
+
+  </button>
+
+</div>
+
+<script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+
+<script src="{{ url_for('static', filename='video.js') }}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+
+    background:#050816;
+    color:white;
+    min-height:100vh;
+    padding:40px;
+
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.dashboard-container{
+
+    width:100%;
+    max-width:1400px;
+    margin:auto;
+
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.dashboard-header{
+
+    text-align:center;
+    margin-bottom:50px;
+
+}
+
+.dashboard-header h1{
+
+    font-size:58px;
+    color:#2563EB;
+    margin-bottom:15px;
+
+}
+
+.dashboard-header p{
+
+    color:#CBD5E1;
+    font-size:20px;
+
+}
+
+/* =========================================
+   UPLOAD GRID
+========================================= */
+
+.upload-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-bottom:40px;
+
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.upload-card{
+
+    background:#091227;
+
+    border:2px solid #1E3A8A;
+
+    border-radius:28px;
+
+    padding:30px;
+
+    transition:0.3s;
+
+    box-shadow:
+    0 0 25px rgba(37,99,235,0.15);
+
+}
+
+.upload-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 0 35px rgba(37,99,235,0.35);
+
+}
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.upload-card h2{
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+    color:white;
+
+}
+
+/* =========================================
+   FILE INPUT
+========================================= */
+
+.upload-card input{
+
+    width:100%;
+
+    margin-bottom:20px;
+
+    color:white;
+
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.upload-card button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.upload-card button:hover{
+
+    background:#1D4ED8;
+
+    transform:scale(1.02);
+
+}
+
+/* =========================================
+   ANALYSIS SECTION
+========================================= */
+
+.analysis-section{
+
+    background:#091227;
+
+    border-radius:30px;
+
+    padding:35px;
+
+    border:1px solid #1E293B;
+
+    box-shadow:
+    0 0 25px rgba(37,99,235,0.15);
+
+}
+
+/* =========================================
+   ANALYSIS TITLE
+========================================= */
+
+.analysis-section h2{
+
+    font-size:38px;
+
+    margin-bottom:25px;
+
+    color:white;
+
+}
+
+/* =========================================
+   ANALYSIS RESULT
+========================================= */
+
+#analysisResult{
+
+    color:#E2E8F0;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+    white-space:pre-wrap;
+
+}
+
+/* =========================================
+   ANALYZE BUTTON
+========================================= */
+
+#viewResultBtn{
+
+    margin-top:30px;
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+#viewResultBtn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-3px);
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:900px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    .dashboard-header h1{
+
+        font-size:40px;
+
+    }
+
+    .analysis-section h2{
+
+        font-size:28px;
+
+    }
+
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agentic AI Onboarding</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <!-- Header -->
+
+        <div class="chat-header">
+            Agentic AI Onboarding Assistant
+        </div>
+
+        <!-- Chat Messages -->
+
+        <div class="chat-box" id="chat-box">
+
+            <div class="message bot-message">
+                Hello 👋 Welcome to the AI onboarding system.
+            </div>
+
+        </div>
+
+        <!-- Input Area -->
+
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Type your message..."
+            >
+
+            <input
+                type="file"
+                id="resume-upload"
+                accept=".pdf"
+            >
+
+            <button onclick="uploadResume()">
+                Upload
+            </button>
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

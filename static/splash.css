@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+
+    background:#050816;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+    color:white;
+}
+
+.splash-container{
+
+    text-align:center;
+}
+
+/* AI CIRCLE */
+
+.ai-circle{
+
+    width:160px;
+    height:160px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#091227;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    border:3px solid #2563EB;
+
+    box-shadow:0 0 40px rgba(37,99,235,0.6);
+
+    animation:pulse 2s infinite;
+}
+
+/* ROBOT ICON */
+
+.ai-circle i{
+
+    font-size:70px;
+
+    color:#2563EB;
+}
+
+/* TITLE */
+
+h1{
+
+    margin-top:40px;
+
+    font-size:48px;
+
+    margin-bottom:15px;
+}
+
+/* SUBTITLE */
+
+p{
+
+    font-size:20px;
+
+    color:#CBD5E1;
+
+    margin-bottom:30px;
+}
+
+/* LOADER */
+
+.loader{
+
+    width:250px;
+    height:6px;
+
+    margin:auto;
+
+    background:#1E293B;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    position:relative;
+}
+
+.loader::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:40%;
+
+    height:100%;
+
+    background:#2563EB;
+
+    animation:loading 2s infinite;
+}
+
+/* ANIMATIONS */
+
+@keyframes loading{
+
+    0%{
+        left:-40%;
+    }
+
+    100%{
+        left:100%;
+    }
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Welcome</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+
+      background:#050816;
+
+      height:100vh;
+
+      display:flex;
+
+      justify-content:center;
+      align-items:center;
+
+      color:white;
+    }
+
+    .container{
+
+      text-align:center;
+    }
+
+    h1{
+
+      font-size:60px;
+
+      margin-bottom:20px;
+    }
+
+    p{
+
+      font-size:22px;
+
+      color:#CBD5E1;
+
+      margin-bottom:40px;
+    }
+
+    button{
+
+      padding:18px 40px;
+
+      border:none;
+
+      border-radius:15px;
+
+      background:#2563EB;
+
+      color:white;
+
+      font-size:20px;
+
+      cursor:pointer;
+
+      transition:0.3s;
+    }
+
+    button:hover{
+
+      background:#1D4ED8;
+
+      transform:scale(1.05);
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Agentic AI Onboarding</h1>
+
+    <p>
+      Welcome to Smart AI-Based Employee Verification
+    </p>
+
+    <button onclick="startOnboarding()">
+
+      Start Onboarding
+
+    </button>
+
+</div>
+
+<script>
+
+function startOnboarding(){
+
+    window.location.href = "/video";
+
+}
+
+</script>
+
+</body>
+</html>
